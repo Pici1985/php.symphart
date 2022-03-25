@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ article.title }} {% endblock %}
+
+{% block body %}
+        <h1>{{ article.title }}</h1>
+        <p>{{ article.body }}</p>
+        <hr>
+        <button class="btn btn-primary">
+                <a href="/" class="text-light" style="text-decoration: none;"> Go Back </a> 
+        </button>
+{% endblock %}
